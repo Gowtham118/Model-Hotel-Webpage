@@ -1,0 +1,66 @@
+<html>
+    <head><link rel="stylesheet" href="login2.css">
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://kit.fontawesome.com/b828a0e16d.js" crossorigin="anonymous"></script>
+    <title>Login</title>
+    </head>
+
+    <body>
+       <h1>Welcome to &nbsp;<b> <i class="fa fa-h-square" aria-hidden="true"></i> O T E L</b></h1>
+    <div class="total">
+            <div  class="login">
+                <button type="button"  onclick=log() id="log">
+                    Login
+                </button> 
+                <button type="button"  onclick=sign() id="sign">
+                    Sign Up
+                </button> 
+            </div>
+        <form id="login-form" action="page.html">
+                <i class="fas fa-envelope"></i> <input type="email"  required placeholder="Email">
+                <br><i class="fas fa-key"></i><input type="password" required placeholder="Password"><br>
+                <input type="checkbox" class="check-box" name=""><span>Remember me</span><br>  
+                <button class="sub" type="submit" >Login</button>
+        </form>
+        <form  id="signin-form" action="page.html" >
+            <i class="fa fa-user"></i> <input type="text" required placeholder="Name"><br>
+           <i class="fas fa-envelope"></i> <input type="email" required placeholder="Email">
+            <br><i class="fas fa-key"></i><input type="password" required placeholder="Password"><br>
+            <input type="checkbox" class="check-box" required><span>I agree to terms and conditions.</span><br>
+            <button class="sub" type="submit" >Sign Up</button>
+        </form>
+    </div>
+<script>
+      var x =  document.getElementById("log");
+      var y =  document.getElementById("sign");
+      var z =  document.getElementById("login-form");
+      var v=  document.getElementById("signin-form");
+      
+      function log()
+      {
+          x.style.backgroundColor="transparent";
+          y.style.backgroundColor="	#00FF0080";
+          v.style.top="290px";
+          z.style.top="-10px";
+          x.style.transition="all 0.7s";
+          y.style.transition="all 0.7s";
+          v.style.transition="all 0.7s";
+          z.style.transition="all 0.7s";
+          x.style.borderBottom="3px solid #00FF0080";
+      }
+       function sign()
+      {
+          y.style.backgroundColor="transparent"
+          x.style.backgroundColor="	#00FF0080";
+          v.style.top="-320px";
+          z.style.top="-350px";
+          x.style.transition="all 0.7s";
+          y.style.transition="all 0.7s";
+          v.style.transition="all 0.7s";
+          z.style.transition="all 0.7s";
+          y.style.borderBottom="3px solid #00FF0080";
+      }
+</script>
+    </body>
+</html>

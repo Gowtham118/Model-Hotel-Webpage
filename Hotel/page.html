@@ -1,0 +1,193 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="page.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/b828a0e16d.js" crossorigin="anonymous"></script>
+    <title>HOTEL page</title>
+</head>
+<body>
+<div class="parallax">
+    <nav class="sticky">
+        <ul>
+            <li class="one"><a href="#page"><b id="page"><i class="fa fa-h-square" aria-hidden="true"></i> O T E L</b>  </a></li>
+            <li><a href="#bookings" onclick=fun()><i class="fas fa-ticket-alt"></i> Bookings</a></li>
+            <li><a href="#food"><i class="fas fa-utensils"></i> Food </a></li>
+            <li><a href="#"><i class="fas fa-outdent"></i> Check Out</a></li>
+            <li class="c"><a href="#"> <i class="fas fa-sign-out-alt"></i>Logout</a></li>
+            <li class="c"><a href="#contact"><i class="fas fa-phone-alt"></i> Contact </a></li>
+        </ul>
+    </nav>
+    <div class="welcome">
+        <H1> <i>Welcome</i> "ikkada login ayina vadi peru"</H1>
+    </div>
+    <div class="descreption">
+        <h2 style=""> Description</h2>
+        <a href="#page"><b id="page"><i class="fa fa-h-square" aria-hidden="true"></i> O T E L</b>  </a> is located in the heart of the historic center of Tadepalligudem in an extremely characteristic, quite and lively area within short walk distance to all sites and is surrounded by the extraordinary beauty of churches, buildings, shops and monuments. Hotel is part of a lovingly restored 1800 palace. 
+
+On entering this charming hotel in Tadepalligudem, you will immediately sense its special intimate atmosphere that makes you feel like being in your own home.  Each detail has been passionately chosen and each room deserves a visit. Hotel style mixes valuable antiques and original artworks with an unexpected eclectic contemporary twist. The entire House recalls the ancient ‘Palazzi’  of times past where young European aristocrats lived while discovering the beauty and the artistic mysteries of India.
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium perferendis odio animi ipsa tempore assumenda voluptatum! Facilis, commodi fugiat. Repellendus nemo nesciunt dolorem nihil recusandae ad animi quis. Aut, <doloribus class="lorem"></doloribus>
+
+
+    </div>
+</div>
+
+<div class="parllax"></div>
+    <div id="bookings" class="bookings">
+            <h3>B O O K I N G S</h3>
+            <div class="rooms">
+                <button type="button" id="single" onclick=single()>Single Rooms</button>
+                <button type="button" id="double" onclick="double()">Double Rooms</button>
+                <table id="single-table">
+                    <tbody>
+                        <tr>
+                           <td>101</td>
+                           <td>102</td>
+                           <td>103</td>
+                        </tr>
+                        <tr>
+                           <td>201</td>
+                           <td>202</td>
+                           <td>203</td>
+                        </tr>
+                        <tr>
+                           <td>301</td>
+                           <td>302</td>
+                           <td>303</td>
+                        </tr>
+                    </tbody>
+                    </table>
+                    <div class="statusdiv">
+                            <i class="fas fa-square" style="color:red;"></i>  Occupied
+                            &nbsp;<i class="fas fa-square" style="color:transparent; outline: 1px solid black;"></i>  Available
+                            &nbsp;<i class="fas fa-square"  style="color:green;"></i>  Selected
+                    </div>    
+                <table id="double-table">
+                    <tbody>
+                        <tr>
+                           <td>104</td>
+                        </tr>
+                        <tr>
+                           <td>204</td>
+                        </tr>
+                        <tr>
+                           <td>304</td>
+                        </tr>
+                    </tbody>
+                    </table>  
+            </div>
+    </div>
+    <div id="food">
+            <h3 >F O O D</h3>
+            <div class="menu">
+                <div id="btnd1" onclick="funct1()">Breakfast <ul style="display: none;" id="bfmenu"><li>Indian</li><br>
+                <li>Continental</li><br>
+                <li>Italian</li></ul></div>
+                <div id="btnd2" onclick="funct2()">Lunch     <ul style="display: none;" id="lmenu"><li>Indian</li><br>
+                <li>Continental</li><br>
+                <li>Italian</li></ul></div>
+                <div id="btnd3" onclick="funct3()">Dinner    <ul style="display: none;" id="dmenu"><li>Indian</li> <br>
+                <li>Continental</li> <br>
+                <li>Italian</li></ul></div>
+            </div>
+    </div>
+    <div id="contact">
+        <h3>C O N T A C T &nbsp;&nbsp;U S </h3>
+        <div class="descreption">
+           We are always ready to help you out and to consider your most valuble feedback,you can also order food from here.
+           <div class="order">
+               <button><i class="fas fa-phone-alt"></i>Contact</button>
+               <button onclick="location.href='#food';"><i class="fas fa-utensils"></i> Food </button>
+           </div>
+        </div>
+    </div>
+<div class="parallax"></div>
+<div class="container">
+    <h1>Our&nbsp;Branches:</h1>
+    <div class="main">
+        <div class="image">
+            <img src="bang.jpg" alt="Hotel image1">
+        </div>
+                <h3>Bangalore</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, at?</p>
+    </div>
+    <div class="main">
+        <div class="image">
+            <img src="hyd.jpg" alt="Hotel image2">
+        </div>
+                <h3>Hyderabad</h3>
+                <p>What's more important than food? In this city food is more of a celebration,We offer the most authentic Hyderabadi food where flavours engages taste buds,while your eyes figuring out our historical Nizam ambience.</p>
+    </div>
+    <div class="main">
+        <div class="image">
+            <img src="chen.jpg" alt="Hotel image3">
+        </div>
+            <h3>Chennai</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, at?</p>
+        </div>
+ </div>
+ <div class="bg">
+ <div class="footer">
+    <h4>Copyright © 2020</h4>
+<p>
+All rights reserved. No part of this publication may be reproduced, distributed, or transmitted in any form or by any means, including photocopying, recording, or other electronic or mechanical methods, without the prior written permission of the publisher, except in the case of brief quotations embodied in critical reviews and certain other noncommercial uses permitted by copyright law.
+</p> 
+</div>
+</div>
+<script>
+    var x =  document.getElementById("single");
+    var y =  document.getElementById("double");
+    var z =  document.getElementById("single-table");
+    var v=  document.getElementById("double-table");
+    
+    function single()
+    {
+        x.style.backgroundColor="transparent";
+        y.style.backgroundColor="	#00FF0080";
+        v.style.top="290px";
+        z.style.top="-10px";
+        x.style.transition="all 0.7s";
+        y.style.transition="all 0.7s";
+        v.style.transition="all 0.7s";
+        z.style.transition="all 0.7s";
+        x.style.borderBottom="3px solid #00FF0080";
+    }
+     function double()
+    {
+        y.style.backgroundColor="transparent"
+        x.style.backgroundColor="	#00FF0080";
+        v.style.top="-380px";
+        z.style.top="-350px";
+        x.style.transition="all 0.7s";
+        y.style.transition="all 0.7s";
+        v.style.transition="all 0.7s";
+        z.style.transition="all 0.7s";
+        y.style.borderBottom="3px solid #00FF0080";
+    }
+    var food = document.getElementById('food');
+function funct1(){
+    document.getElementById('bfmenu').style.display='block';
+    document.getElementById('lmenu').style.display='none';
+    document.getElementById('dmenu').style.display='none';
+    food.style.backgroundImage = "url('breakfast.jpg')";
+    food.style.transition="all 1s";
+}
+function funct2(){
+    document.getElementById('lmenu').style.display='block';
+    document.getElementById('bfmenu').style.display='none';
+    document.getElementById('dmenu').style.display='none';
+    food.style.backgroundImage = 'url("lunch.jpg")';
+    food.style.transition="all 1s";
+
+}
+function funct3(){
+    document.getElementById('dmenu').style.display='block';
+    document.getElementById('lmenu').style.display='none';
+    document.getElementById('bfmenu').style.display='none';
+    food.style.backgroundImage = "url('dinner2.jpg')";
+    food.style.transition="all 1s";
+}
+</script> 
+</body>
+</html>
